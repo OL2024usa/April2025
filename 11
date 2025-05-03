@@ -1,0 +1,21 @@
+"""
+You're absolutely correct! Here's a breakdown of the Python libraries and why they are used:
+
+* **`csv`**: This module is part of the Python standard library. It provides functionality to both read from and write to CSV (Comma Separated Values) files.  You'll use it to structure and save the scraped data.
+
+* **`datetime`**: This module is also part of the Python standard library.  It supplies classes to work with dates and times.  In web scraping, you might use it to timestamp your data or handle date-related information from the website.
+
+* **`requests`**: This is a very popular, *third-party* library.  It allows you to send HTTP requests (like GET and POST) to web servers.  You'll use it to fetch the HTML content of the web pages you want to scrape. You will need to install this library (e.g., via `pip install requests`).
+
+* **`BeautifulSoup`**:  Specifically, `bs4` (Beautiful Soup version 4). This is another *third-party* library, commonly used for parsing HTML and XML.  It creates a parse tree for parsed pages that can be used to extract data in an organized and easy-to-iterate way.  You'll use it to navigate the HTML structure of a page and find the specific data you're looking for. You will need to install this library (e.g., via `pip install beautifulsoup4`).
+
+* **`time`**: This is a built-in Python module. It provides various time-related functions.  In web scraping, `time.sleep()` is often used to add delays between requests, which is crucial for being a polite scraper and avoiding overloading websites.
+
+Here's how you'd typically import these libraries at the beginning of your Python script:
+"""
+
+import csv
+from datetime import datetime
+import requests
+from bs4 import BeautifulSoup
+import time
